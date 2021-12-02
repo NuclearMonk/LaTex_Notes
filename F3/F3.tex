@@ -2,11 +2,20 @@
 \usepackage{tikz}
 \usepackage{hyperref}
 \usepackage{tikz}
+\usetikzlibrary{patterns,arrows.meta}
 \begin{document} 
 
 \section{AULA 1}
 
 \subsection{Lei de Coulomb}
+\begin{center}
+    \begin{tikzpicture}
+        \draw[->] (0,0) -- (2,0) node[above left] {$ \vec{r_{12}} $};
+        \draw[red,Circle->](2,0) -- (3,0) node[midway,above] {$ \vec{F_{12}} $};
+        \draw[blue, Circle->] (0,0) -- (1,0)node[midway,above] {$ \vec{e_{12}} $};
+        \end{tikzpicture}
+\end{center}
+
 A força entre duas cargas pontuais $q_{1}$ e $q_{2}$ é dada por
 \[ \vec{F}_{12} = K_e \frac{q_1 q_2}{r_{12}^2} \vec{e_{r_{12}}}\] 
 onde 
@@ -15,11 +24,13 @@ onde
 \[ \epsilon_0 = \frac{1}{4\pi*9*10^9} = 8.85*10^{-12} N^{-1}C^2m^{-2}\]
 $\epsilon_0$ é conhecida como a permitividade do vácuo
 
+
 \subsection{Forca Elétrica vs Força Gravítica}
 \[F_g = G \frac{m_1m_2}{r^2},     F_e = K_e \frac{q_1 q_2}{r_{12}^2}\]
 A força entre dois protões afastados por uma distância d
 \[\frac{F_e}{F_g}= \frac{9*10^9 \frac{{(1.6*10^{-19})}^2}{d^2}}{6.7*10^{-11} \frac{{(1.7*10^{-27})}^2}{d^2}} = 10^{36}\] 
-Isto é, a interação elétrica entre os dois protões é $10^{36}$ vezes maior que a interação gravítica entre eles
+Isto é, a interação elétrica entre os dois protões é $10^{36}$
+ vezes maior que a interação gravítica entre eles
 ,logo para partículas carregadas a interação gravítica é desprezável
 
 \subsection{Campo Elétrico}

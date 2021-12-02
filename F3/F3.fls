@@ -1,10 +1,10 @@
-PWD /home/manuel/Documents/LaTex Notes/F3
+PWD /home/manuel/Apontamentos/LaTex_Notes/F3
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.tex
-OUTPUT /home/manuel/Documents/LaTex Notes/F3/TP.log
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.tex
+OUTPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -162,11 +162,18 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.aux
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.aux
-OUTPUT /home/manuel/Documents/LaTex Notes/F3/TP.aux
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.aux
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.aux
+OUTPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
@@ -179,25 +186,25 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.out
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.out
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.out
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.out
-OUTPUT /home/manuel/Documents/LaTex Notes/F3/TP.pdf
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.out
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.out
-OUTPUT /home/manuel/Documents/LaTex Notes/F3/TP.out
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.out
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.out
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.out
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.out
+OUTPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.pdf
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.out
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.out
+OUTPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.out
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.aux
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.out
-INPUT /home/manuel/Documents/LaTex Notes/F3/TP.out
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.aux
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.out
+INPUT /home/manuel/Apontamentos/LaTex_Notes/F3/F3.out
 INPUT /home/manuel/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
