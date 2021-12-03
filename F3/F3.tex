@@ -131,7 +131,7 @@ de um ponto A para um ponto B é igual á energia ganha pelo sistema quando a pa
 \subsection{Potencial Criado Por Uma Carga}
 
 Podemos então definir um potencial elétrico como o trabalho do campo por unidade de carga (para uma carga pontual)
-\[V_p \equiv  \frac{U_e}{q_2} = frac{1}{4\pi\epsilon_0} \frac{q_1}{R}  \left[V\right]\]
+\[V_p \equiv  \frac{U_e}{q_2} = \frac{1}{4\pi\epsilon_0} \frac{q_1}{R}  \left[V\right]\]
 O potencial pode ser generalizado trocando o $\infty$ por outro ponto de referência, ref:
 \[V_p = \int_{p}^{ref}\vec{E}.\vec{dl}= frac{q}{4\pi\epsilon_0}\left[\frac{1}{r_p}-\frac{1}{r_{ref}}\right]\]
 Note-se que
@@ -146,15 +146,16 @@ portante, num caso geral, o potencial é definido por uma parte constante
 O princípio da sobreposição aplica-se ao potencial!!
 
 \subsection{Para uma Distribuição de Carga}
-\[dV = ???\]
-\[V_p = ???\]
+\[dV = \frac{1}{4\pi\epsilon_0} \frac{dq}{r} +\]
+\[V_p = \int_{}^{} dV \]
 
 \subsection{Relação Entre V e \texorpdfstring{$\vec{E}$}{E}}
 Já sabemos como obter V a partir de $\vec{E}$:
 \[V_p = \int_{p}^{\infty}\vec{E}.\vec{dl}\]
 Como podemos obter $\vec{E}$ a partir de V\@?
 \[V_p = V_p-0 = V_p-V_{ref}= \int_{ref}^{p}dv, v= v \left(x,y,z\right)\]
-\[dv\left(x,y,z\right) = ???\]
+\[dv\left(x,y,z\right) = \frac{\partial}{\partial x}dx + \frac{\partial}{\partial y}dy +\frac{\partial}{\partial z}dz =\]
+\[=\left(\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)\left(dx,dy,dz\right)\]
 
 \[V_p = \int_{ref}^{p}\vec{\nabla}v.\vec{dl}= -\int_{p}^{ref}\vec{\nabla}v.\vec{dl}= \int_{p}^{ref}\vec{E}.\vec{dl}\]
 \[\vec{E} = -\vec{\nabla}v\]
@@ -170,13 +171,14 @@ Note-se que oa diferença de potencial é o trabalho por unidade de carga realiz
 \[w= \int_{a}^{b}\vec{F}.\vec{dl}= \int_{a}^{b}q\vec{E}.\vec{dl}=qV_{ab}\]
 
 sendo um trabalho realizado pro um campo conservativo, podemos escrever também que:
-\[\Delta V_{ab}= ????? \]
+\[\Delta V_{ab}= \int_{}^{} \]
 
 \subsection{Superficies equipotenciais}
 Por definição, numa superfície equipotencial
 \[V = c^{te}\]
 Então:
 \[V_{ab}(numa superficie) = 0 = \int_{a}^{b}q\vec{E}.\vec{dl} = 0 \implies \vec{E} \perp \vec{dl}\]
+
 
 
 \end{document}
