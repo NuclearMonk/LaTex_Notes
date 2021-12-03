@@ -125,4 +125,58 @@ Relembrar
 
 Agora que já sabemos que a força elétrica é conservativa, o trabalho realizado para mover uma carga 
 de um ponto A para um ponto B é igual á energia ganha pelo sistema quando a partícula vai de A para B.
+
+\section{AULA 2}
+
+\subsection{Potencial Criado Por Uma Carga}
+
+Podemos então definir um potencial elétrico como o trabalho do campo por unidade de carga (para uma carga pontual)
+\[V_p \equiv  \frac{U_e}{q_2} = frac{1}{4\pi\epsilon_0} \frac{q_1}{R}  \left[V\right]\]
+O potencial pode ser generalizado trocando o $\infty$ por outro ponto de referência, ref:
+\[V_p = \int_{p}^{ref}\vec{E}.\vec{dl}= frac{q}{4\pi\epsilon_0}\left[\frac{1}{r_p}-\frac{1}{r_{ref}}\right]\]
+Note-se que
+\[\int_{p}^{\infty}\vec{E}.\vec{dl}= \int_{p}^{ref}\vec{E}.\vec{dl} + \underbrace{\int_{ref}^{\infty}\vec{E}.\vec{dl}}_{constante para ref}\]
+portante, num caso geral, o potencial é definido por uma parte constante
+
+\subsection{Potencial Criado Por Varias Cargas}
+
+\[V_p = \int_{p}^{ref}\left(\sum\vec{E_i}\right).\vec{dl} = \int_{p}^{ref}\left(\sum\vec{E_i}.\vec{dl}\right)\]
+\[\sum\int_{p}^{ref}\vec{E_i}.\vec{dl} = \sum V_{pi}\]
+
+O princípio da sobreposição aplica-se ao potencial!!
+
+\subsection{Para uma Distribuição de Carga}
+\[dV = ???\]
+\[V_p = ???\]
+
+\subsection{Relação Entre V e \texorpdfstring{$\vec{E}$}{E}}
+Já sabemos como obter V a partir de $\vec{E}$:
+\[V_p = \int_{p}^{\infty}\vec{E}.\vec{dl}\]
+Como podemos obter $\vec{E}$ a partir de V\@?
+\[V_p = V_p-0 = V_p-V_{ref}= \int_{ref}^{p}dv, v= v \left(x,y,z\right)\]
+\[dv\left(x,y,z\right) = ???\]
+
+\[V_p = \int_{ref}^{p}\vec{\nabla}v.\vec{dl}= -\int_{p}^{ref}\vec{\nabla}v.\vec{dl}= \int_{p}^{ref}\vec{E}.\vec{dl}\]
+\[\vec{E} = -\vec{\nabla}v\]
+
+\subsection{Diferença de potencial}
+Não confundir diferença de potencial com variação de potencial
+\[\Delta V_{+-} = V_- - V_+ < 0\]
+\[V_{+-} = V_+ - V_-  = -\Delta V_{+-} > 0\]
+
+\[V_{ab}=V_a - V_b = ????\]
+
+Note-se que oa diferença de potencial é o trabalho por unidade de carga realizado pelo campo elétrico:
+\[w= \int_{a}^{b}\vec{F}.\vec{dl}= \int_{a}^{b}q\vec{E}.\vec{dl}=qV_{ab}\]
+
+sendo um trabalho realizado pro um campo conservativo, podemos escrever também que:
+\[\Delta V_{ab}= ????? \]
+
+\subsection{Superficies equipotenciais}
+Por definição, numa superfície equipotencial
+\[V = c^{te}\]
+Então:
+\[V_{ab}(numa superficie) = 0 = \int_{a}^{b}q\vec{E}.\vec{dl} = 0 \implies \vec{E} \perp \vec{dl}\]
+
+
 \end{document}
