@@ -4,6 +4,8 @@
 \usepackage{mathtools}
 \usepackage{hyperref}
 \usepackage{tikz}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 \usetikzlibrary{patterns,arrows.meta}
 \begin{document} 
 
@@ -165,13 +167,15 @@ Não confundir diferença de potencial com variação de potencial
 \[\Delta V_{+-} = V_- - V_+ < 0\]
 \[V_{+-} = V_+ - V_-  = -\Delta V_{+-} > 0\]
 
-\[V_{ab}=V_a - V_b = ????\]
+\[V_{ab}=V_a - V_b = \int_{a}^{ref}\vec{E}.\vec{dl}-\int_{b}^{ref}\vec{E}.\vec{dl}=\]
+\[\int_{a}^{ref}\vec{E}.\vec{dl}+\int_{ref}^{b}\vec{E}.\vec{dl}=\]
+\[\int_{a}^{b}\vec{E}.\vec{dl}\]
 
 Note-se que oa diferença de potencial é o trabalho por unidade de carga realizado pelo campo elétrico:
 \[w= \int_{a}^{b}\vec{F}.\vec{dl}= \int_{a}^{b}q\vec{E}.\vec{dl}=qV_{ab}\]
 
 sendo um trabalho realizado pro um campo conservativo, podemos escrever também que:
-\[\Delta V_{ab}= \int_{}^{} \]
+\[\Delta V_{ab}= -qV_{ab} \]
 
 \subsection{Superficies equipotenciais}
 Por definição, numa superfície equipotencial
@@ -180,5 +184,83 @@ Então:
 \[V_{ab}(numa superficie) = 0 = \int_{a}^{b}q\vec{E}.\vec{dl} = 0 \implies \vec{E} \perp \vec{dl}\]
 
 
+\subsection{Lei de Gauss}
+Para derivarmos a lei de Gauss começaremos por calcular o fluxo de uma carga pontual e depois usaremos o principio da sobreposição:
+\begin{center}
+    \begin{tikzpicture}
+        \coordinate (O) at (0,0);
+        \draw (O) circle [radius=1];
+        \fill [red](O) circle [radius = 0.1] node[below] {q};
+        
+        \draw [->] (O)+(0,1) -- (0,2) node [midway,left] {$\vec{n}$};
+        \draw [->] (O)+(0,-1) -- (0,-2)node [midway,right] {$\vec{n}$};
+        \draw [->] (O)+(1,0) -- (2,0)node [midway,above] {$\vec{n}$};
+        \draw [->] (O)+(-1,0) -- (-2,0)node [midway,below] {$\vec{n}$};
 
+        \draw [blue,->] (O)+(0.2,0.2) -- (2,2);
+        \draw [blue,->] (O)+(-0.2,-0.2) -- (-2,-2);
+        \draw [blue,->] (O)+(0.2,-0.2) -- (2,-2);
+        \draw [blue,->] (O)+(-0.2,0.2) -- (-2,2);
+
+    \end{tikzpicture}
+\end{center}
+\[\vec{E} = K_e \frac{q}{r^2} \vec{e_r}\]
+\[\phi = \oint\vec{E}.\vec{n}ds\]
+\[\phi = \oint K_e \frac{q}{r^2}\underbrace{\vec{e_r}.\vec{e_r}}_1 ds =\]
+\[=K_e \frac{q}{\underbrace{r^2}_{r constante}} \oint ds =\]
+\[ K_e \frac{q}{r^2} 4\pi r^2 = \frac{q}{\epsilon_0}\]
+\subsubsection{Se tivermos múltiplas cargas:}
+\[\phi = \oint \left(\sum\vec{E_i}\right).\vec{n} ds = \oint\sum\left(\vec{E_i}.\vec{n}\right)ds =\]
+\[\sum \oint\vec{E_i}\vec{n} ds = \sum_{i} \frac{q_i}{\epsilon_0}\]
+\subsubsection{Lei De Gauss}
+\[\oint \vec{E}.\vec{n} ds = \frac{Q_{int}}{\epsilon_0}\]
+Nota: Em geral, $ Q_{int} = \int_{col}\rho dv $ sendo vol o volume cuja fronteira é a nossa superficie fechada
+
+
+Utilizando o teorema da divergência podemos escrever a lei de gauss na forma diferencial:
+\[\oint\vec{E}.\vec{n}ds = \oint_{vol}\vec{\nabla}.\vec{E}dv = \frac{\rho}{\epsilon_0}\]
+\[=\left(\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)\left(E_x,E_y,E_z\right)\]
+\[=\frac{\partial E_x}{\partial x} +\frac{\partial E_y}{\partial y} + \frac{\partial E_z}{\partial z}\]
+Esta lei, derivada da lei experimental de coulomb, pode tornar o calculo dos campos elétricos bastante mais simples para um conjunto muito especifico de geometrias nos restantes casos as contas seriam  até mais complexas.
+
+Note-se que esta lei vai permitir calcular não $ \vec{E} $, mas $|\vec{E}|$ para fazer o produto interno do fluxo temos de saber à partida a direção do campo. O resultado das contas será o seu módulo.
+
+\subsection{As 3 Geometrias em que se aplica a Lei de Gauss}
+\begin{center}
+    \begin{tikzpicture}
+        \coordinate (O) at (0,0);
+        \draw (O) circle [radius=1];
+        \fill [red](O) circle [radius = 0.5] node[below] {q};
+        \draw [green](O) circle [radius=2] node [below = 30,right = 50] {Superfície de Gauss esférica};
+        \draw [green,->] (1.73,1) -- (3.46,2) node [below] {$ \vec{n} $}; 
+        \draw [blue,->] (O) -- (2,2) node [right] {$\vec{E}$};
+        \draw [blue,->] (O) -- (-2,-2);
+        \draw [blue,->] (O) -- (2,-2);
+        \draw [blue,->] (O) -- (-2,2);
+        \draw [blue,->] (O) -- (0,2.75);
+        \draw [blue,->] (O) -- (0,-2.75);
+        \draw [blue,->] (O) -- (2.75,0);
+        \draw [blue,->] (O) -- (-2.75,0);
+
+        \coordinate (O2) at (8,-1);
+        \coordinate (I) at (8,1);
+        \draw (O2) circle [radius=1] node[below=30] {porquê radial?};
+        \draw (O2) -- (I);
+        \draw [red,Circle-,dotted](O2) + (0.5,0) -- (I);
+        \draw [red,<-] (I) + (-0.25,1) -- (I);
+        \draw [red,Circle- ,dotted](O2) + (-0.5,0) -- (I);
+        \draw [red,<-] (I) + (0.25,1) -- (I);
+        \draw [red,<-] (I) + (0,2) -- (I);
+    \end{tikzpicture}
+\end{center}
+
+$\vec{E}$ é sempre paralelo a $\vec{n}$ e $|\vec{E}|$ é constante em toda a superfície de Gauss
+\subsection{Simetria Cilíndrica}
+\includegraphics[width = \textwidth]{simetria_cilindrica.png}
+Na superficie lateral do cilindro de Gauss $\vec{E}$ é sempre paralelo a $\vec{n}$ e $|\vec{E}$ é constante.
+Nas ``tampas'' do cilindro de Gauss $\vec{E}$ é perpendicular a $\vec{n}$, pelo que $\vec{E}.\vec{n}=0$
+\subsection{Plano \texorpdfstring{$\infty$}{Infinito}}
+\includegraphics[width = \textwidth]{plano_infinito.png}
+Nas ``tampas'' do cilindro de Gauss $\vec{E}$ é paralelo a $\vec{n}$ e $|\vec{E}|$ é constante.
+Na superfície lateral do cilindro de Gauss $\vec{E}$ é perpendicular a $\vec{n}$ pelo que $\vec{E}.\vec{n} = 0$
 \end{document}
